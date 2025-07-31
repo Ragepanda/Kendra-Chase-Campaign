@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import "@fontsource/poppins";
+@theme {
+  --color-brand-green: #3caf4b;
+  --color-brand-blue: #005fad;
+  --color-brand-white: #ffffff;
+  --color-brand-bg: #f1ede4;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: #f1ede4;
+}
