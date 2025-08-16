@@ -1,16 +1,21 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import campaignLogo from "../assets/campaign-logo.png";
+import miniLogo from "../assets/campaign-logo-mini.png";
+import { isMobile } from "react-device-detect";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-brand-white text-brand-blue h-32">
+    <nav className="bg-brand-white text-brand-blue h-24 md:h-40">
       <div className="w-full px-4 sm:px-6 lg:px-8 h-full">
         <div className="flex justify-between h-full items-center">
           {/* Logo / Brand */}
-          <img src={campaignLogo} className="flex-shrink-0 h-full w-auto" />
+          <img
+            src={isMobile ? miniLogo : campaignLogo}
+            className="flex-shrink-0 h-full w-auto py-4"
+          />
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 font-black">

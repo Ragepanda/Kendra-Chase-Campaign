@@ -4,10 +4,15 @@
   --color-brand-green: #3caf4b;
   --color-brand-blue: #005fad;
   --color-brand-white: #ffffff;
-  --color-brand-bg: #f1ede4;
+  --color-brand-orange: #ff6d4d;
+  --color-brand-yellow: #f3cb2a;
+  --color-brand-black: #040404;
+  --color-brand-skyblue: #add9f4;
+  --color-brand-liteblue: #4196db;
+  --color-brand-bg: #d8e2dc;
 }
 
 body {
   font-family: "Poppins";
-  background-color: #f1ede4;
+  background-color: #d8e2dc;
 }
