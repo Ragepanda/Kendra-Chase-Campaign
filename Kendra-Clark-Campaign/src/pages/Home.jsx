@@ -5,7 +5,7 @@ import GeorgiaHouse165Map from "../components/GeorgiaHouse165Map";
 
 function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-start pb-50">
+    <div className="min-h-screen flex flex-col items-center justify-start">
       {/* Banner Area */}
       <section
         style={{ backgroundImage: `url(${cityBackgroundImage})` }}
@@ -36,7 +36,7 @@ function Home() {
       </section>
       {/*Info Cards */}
       <section className="flex flex-col flex-wrap gap-4 py-8 px-4 md:flex-row w-full justify-center align-middle">
-        <div className="w-full md:w-11/24 md:min-w-11/24 p-4 bg-brand-white rounded-2xl flex flex-col justify-center">
+        <div className="w-full md:w-11/24 md:min-w-11/24 p-4 px-8 bg-brand-white rounded-2xl flex flex-col justify-center">
           <h2 className="text-4xl font-bold text-brand-orange pb-6">
             Meet Kendra
           </h2>

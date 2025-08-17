@@ -23,16 +23,22 @@ export default function Navbar() {
               Home
             </Link>
             <Link to="/about" className="hover:text-brand-green">
-              About
+              Issues
             </Link>
             <Link to="/services" className="hover:text-brand-green">
-              Services
+              Volunteer
             </Link>
-            <Link to="/contact" className="hover:text-brand-green">
-              Contact
+            <Link
+              to="https://secure.actblue.com/donate/votekendraclark"
+              className="hover:text-brand-green"
+            >
+              Contribute
             </Link>
             <div className="flex justify-between w-22">
-              <a className="h-full">
+              <a
+                href="https://www.instagram.com/votekendraclark"
+                className="h-full"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-full"
@@ -44,19 +50,25 @@ export default function Navbar() {
                   />
                 </svg>
               </a>
-              <a className="h-full">
+              <a
+                className="h-full"
+                href="https://www.tiktok.com/@votekendraclark"
+              >
                 <svg
-                  className="w-6 h-full"
                   xmlns="http://www.w3.org/2000/svg"
+                  className="w-6 h-full"
                   viewBox="0 0 640 640"
                 >
                   <path
                     className="fill-brand-blue hover:fill-brand-green"
-                    d="M439.8 358.7C436.5 358.3 433.1 357.9 429.8 357.4C433.2 357.8 436.5 358.3 439.8 358.7zM320 291.1C293.9 240.4 222.9 145.9 156.9 99.3C93.6 54.6 69.5 62.3 53.6 69.5C35.3 77.8 32 105.9 32 122.4C32 138.9 41.1 258 47 277.9C66.5 343.6 136.1 365.8 200.2 358.6C203.5 358.1 206.8 357.7 210.2 357.2C206.9 357.7 203.6 358.2 200.2 358.6C106.3 372.6 22.9 406.8 132.3 528.5C252.6 653.1 297.1 501.8 320 425.1C342.9 501.8 369.2 647.6 505.6 528.5C608 425.1 533.7 372.5 439.8 358.6C436.5 358.2 433.1 357.8 429.8 357.3C433.2 357.7 436.5 358.2 439.8 358.6C503.9 365.7 573.4 343.5 593 277.9C598.9 258 608 139 608 122.4C608 105.8 604.7 77.7 586.4 69.5C570.6 62.4 546.4 54.6 483.2 99.3C417.1 145.9 346.1 240.4 320 291.1z"
+                    d="M544.5 273.9C500.5 274 457.5 260.3 421.7 234.7L421.7 413.4C421.7 446.5 411.6 478.8 392.7 506C373.8 533.2 347.1 554 316.1 565.6C285.1 577.2 251.3 579.1 219.2 570.9C187.1 562.7 158.3 545 136.5 520.1C114.7 495.2 101.2 464.1 97.5 431.2C93.8 398.3 100.4 365.1 116.1 336C131.8 306.9 156.1 283.3 185.7 268.3C215.3 253.3 248.6 247.8 281.4 252.3L281.4 342.2C266.4 337.5 250.3 337.6 235.4 342.6C220.5 347.6 207.5 357.2 198.4 369.9C189.3 382.6 184.4 398 184.5 413.8C184.6 429.6 189.7 444.8 199 457.5C208.3 470.2 221.4 479.6 236.4 484.4C251.4 489.2 267.5 489.2 282.4 484.3C297.3 479.4 310.4 469.9 319.6 457.2C328.8 444.5 333.8 429.1 333.8 413.4L333.8 64L421.8 64C421.7 71.4 422.4 78.9 423.7 86.2C426.8 102.5 433.1 118.1 442.4 131.9C451.7 145.7 463.7 157.5 477.6 166.5C497.5 179.6 520.8 186.6 544.6 186.6L544.6 274z"
                   />
                 </svg>
               </a>
-              <a className="h-full">
+              <a
+                className="h-full"
+                href="https://www.facebook.com/votekendraclark"
+              >
                 <svg
                   className="w-6 h-full"
                   xmlns="http://www.w3.org/2000/svg"
@@ -117,19 +129,19 @@ export default function Navbar() {
             to="/about"
             className="block px-3 py-2 rounded-md hover:bg-brand-green hover:text-white"
           >
-            About
+            Issues
           </Link>
           <Link
             to="/services"
             className="block px-3 py-2 rounded-md hover:bg-brand-green hover:text-white"
           >
-            Services
+            Volunteer
           </Link>
           <Link
-            to="/contact"
+            to="https://secure.actblue.com/donate/votekendraclark"
             className="block px-3 py-2 rounded-md hover:bg-brand-green hover:text-white"
           >
-            Contact
+            Contribute
           </Link>
         </div>
       )}
