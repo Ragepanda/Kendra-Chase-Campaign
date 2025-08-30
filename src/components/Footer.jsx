@@ -7,7 +7,7 @@ export default function Footer() {
           <h4 className="text-lg font-semibold mb-2 text-brand-blue">
             Contact
           </h4>
-          <p className="text-sm">Kendra Clark Campaign</p>
+          <p className="text-sm">Committee to Elect Kendra Clark</p>
           <p className="text-sm">PO Box 3894</p>
           <p className="text-sm">Savannah, GA 31414</p>
           <p className="text-sm mt-2">

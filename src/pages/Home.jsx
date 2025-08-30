@@ -1,5 +1,5 @@
 import cityBackgroundImage from "../assets/city-background.png";
-import homeImage1 from "../assets/home-photo-1.jpg";
+import homeImage1 from "../assets/home-photo-2.jpg";
 import kendraHeadshot from "../assets/kendra-transparent.png";
 import GeorgiaHouse165Map from "../components/GeorgiaHouse165Map";
 
@@ -55,7 +55,7 @@ function Home() {
         </div>
         <img
           src={homeImage1}
-          className="w-full h-auto md:w-11/24 md:min-w-11/24 object-cover object-right-bottom rounded-2xl"
+          className="w-full h-auto md:w-11/24 md:min-w-11/24 object-cover object-[75%_50%] rounded-2xl"
         ></img>
         {/* <div className="bg-amber-200 w-full md:w-4/10 md:min-w-4/10"></div>
         <img
