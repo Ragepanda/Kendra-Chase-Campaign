@@ -13,33 +13,37 @@ function Issue({ issueId, title, paragraphs, proposals }) {
       {paragraphs.map((paragraph) => (
         <p className="text-2xl">{paragraph}</p>
       ))}
-      <button
-        className="h-15 w-full md:w-2/3 fill-brand-white hover:fill-brand-green bg-brand-green hover:bg-brand-white text-brand-white hover:text-brand-green hover:border-4 hover:border-brand-green rounded-2xl self-center flex justify-between items-center px-12"
-        onClick={() => {
-          setShowProposal(!showProposal);
-        }}
-      >
-        <span className="font-bold text-xl">My Proposals</span>
-        {showProposal ? (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="28"
-            width="28"
-            viewBox="0 0 640 640"
-          >
-            <path d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z" />
-          </svg>
-        ) : (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24"
-            width="24"
-            viewBox="0 0 448 512"
-          >
-            <path d="M201.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 173.3 54.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
-          </svg>
-        )}
-      </button>
+      {proposals.length > 0 ? (
+        <button
+          className="h-15 w-full md:w-2/3 fill-brand-white hover:fill-brand-green bg-brand-green hover:bg-brand-white text-brand-white hover:text-brand-green hover:border-4 hover:border-brand-green rounded-2xl self-center flex justify-between items-center px-12"
+          onClick={() => {
+            setShowProposal(!showProposal);
+          }}
+        >
+          <span className="font-bold text-xl">My Proposals</span>
+          {showProposal ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="28"
+              width="28"
+              viewBox="0 0 640 640"
+            >
+              <path d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z" />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              width="24"
+              viewBox="0 0 448 512"
+            >
+              <path d="M201.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 173.3 54.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+            </svg>
+          )}
+        </button>
+      ) : (
+        ""
+      )}
       {showProposal ? (
         <ul className="list-[circle] text-2xl marker:text-brand-blue px-8 self-start">
           {proposals.map((proposal) => (
