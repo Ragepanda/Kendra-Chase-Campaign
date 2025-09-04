@@ -22,18 +22,21 @@ export default function Navbar() {
             <Link to="/" className="hover:text-brand-green">
               Home
             </Link>
-            <Link to="/about" className="hover:text-brand-green">
+            <Link to="/issues" className="hover:text-brand-green">
               Issues
             </Link>
-            <Link to="/services" className="hover:text-brand-green">
+            <a
+              href="https://www.mobilize.us/votekendraclark/event/836393/"
+              className="hover:text-brand-green"
+            >
               Volunteer
-            </Link>
-            <Link
+            </a>
+            <a
               to="https://secure.actblue.com/donate/votekendraclark"
               className="hover:text-brand-green"
             >
               Contribute
-            </Link>
+            </a>
             <div className="flex justify-between w-22">
               <a
                 href="https://www.instagram.com/votekendraclark"
@@ -126,17 +129,17 @@ export default function Navbar() {
             Home
           </Link>
           <Link
-            to="/about"
+            to="/issues"
             className="block px-3 py-2 rounded-md hover:bg-brand-green hover:text-white"
           >
             Issues
           </Link>
-          <Link
-            to="/services"
+          <a
+            href="https://www.mobilize.us/votekendraclark/event/836393/"
             className="block px-3 py-2 rounded-md hover:bg-brand-green hover:text-white"
           >
             Volunteer
-          </Link>
+          </a>
           <Link
             to="https://secure.actblue.com/donate/votekendraclark"
             className="block px-3 py-2 rounded-md hover:bg-brand-green hover:text-white"

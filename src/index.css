@@ -16,3 +16,7 @@ body {
   font-family: "Poppins";
   background-color: #d8e2dc;
 }
+
+button:hover {
+  cursor: pointer;
+}

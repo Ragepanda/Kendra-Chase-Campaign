@@ -28,9 +28,14 @@ function Home() {
                 Contribute
               </button>
             </a>
-            <button className="rounded-lg bg-brand-green text-brand-white hover:bg-brand-white hover:text-brand-green min-w-30 w-5/12 font-bold">
-              Volunteer
-            </button>
+            <a
+              href="https://www.mobilize.us/votekendraclark/event/836393/"
+              className="w-5/12"
+            >
+              <button className="rounded-lg bg-brand-green text-brand-white hover:bg-brand-white hover:text-brand-green w-full min-w-30 h-full font-bold">
+                Volunteer
+              </button>
+            </a>
           </div>
         </div>
       </section>

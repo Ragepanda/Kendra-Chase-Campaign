@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-100 border-t border-gray-300 mt-8">
@@ -35,9 +37,9 @@ export default function Footer() {
           </h4>
           <ul className="space-y-1 text-sm">
             <li>
-              <a href="/" className="text-blue-600 hover:underline">
+              <Link href="/" className="text-blue-600 hover:underline">
                 Home
-              </a>
+              </Link>
             </li>
             {/* <li>
               <a href="/about" className="text-blue-600 hover:underline">
@@ -45,9 +47,9 @@ export default function Footer() {
               </a>
             </li> */}
             <li>
-              <a href="/issues" className="text-blue-600 hover:underline">
+              <Link to="/issues" className="text-blue-600 hover:underline">
                 Issues
-              </a>
+              </Link>
             </li>
             {/* <li>
               <a href="/events" className="text-blue-600 hover:underline">
@@ -55,7 +57,10 @@ export default function Footer() {
               </a>
             </li> */}
             <li>
-              <a href="/volunteer" className="text-blue-600 hover:underline">
+              <a
+                href="https://www.mobilize.us/votekendraclark/event/836393/"
+                className="text-blue-600 hover:underline"
+              >
                 Volunteer
               </a>
             </li>
