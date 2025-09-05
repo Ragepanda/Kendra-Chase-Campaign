@@ -37,7 +37,7 @@ export default function Footer() {
           </h4>
           <ul className="space-y-1 text-sm">
             <li>
-              <Link href="/" className="text-blue-600 hover:underline">
+              <Link to="/" className="text-blue-600 hover:underline">
                 Home
               </Link>
             </li>

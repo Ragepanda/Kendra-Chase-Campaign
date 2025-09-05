@@ -11,7 +11,7 @@ function Issue({ issueId, title, paragraphs, proposals }) {
         {title}
       </h1>
       {paragraphs.map((paragraph) => (
-        <p className="text-2xl">{paragraph}</p>
+        <p className="text-xl">{paragraph}</p>
       ))}
       {proposals.length > 0 ? (
         <button
@@ -45,7 +45,7 @@ function Issue({ issueId, title, paragraphs, proposals }) {
         ""
       )}
       {showProposal ? (
-        <ul className="list-[circle] text-2xl marker:text-brand-blue px-8 self-start">
+        <ul className="list-[circle] text-xl marker:text-brand-blue px-8 self-start">
           {proposals.map((proposal) => (
             <li className="mb-2">{proposal}</li>
           ))}

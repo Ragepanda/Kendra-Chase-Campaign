@@ -32,7 +32,7 @@ export default function Navbar() {
               Volunteer
             </a>
             <a
-              to="https://secure.actblue.com/donate/votekendraclark"
+              href="https://secure.actblue.com/donate/votekendraclark"
               className="hover:text-brand-green"
             >
               Contribute
